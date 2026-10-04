@@ -1,0 +1,11 @@
+$base-space: 8px;
+$max-space: 100;
+
+:root {
+  --ba-spacing-default: $base-space;
+  --ba-spacing-half: calc(#{$base-space} / 2);
+
+  @for $i from 1 to $max-space {
+    --ba-spacing-#{$i}-x: calc(#{$base-space} * #{$i});
+  }
+}
